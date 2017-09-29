@@ -1,7 +1,7 @@
 <template>
     <div id="app" class="alien-table">
       <div class="table-content">
-        <table>
+        <!--<table>
           <thead>
           <tr class="table-header">
             <th>1</th>
@@ -33,13 +33,15 @@
               <td >1</td>
             </tr>
           </tbody>
-        </table>
+        </table>-->
+        11111
       </div>
     </div>
 </template>
 
 <script>
 import tableHeader from './tableHeader.vue'
+import './alienTable.css'
     export default{
     name: 'alienTable',
         /*props: {

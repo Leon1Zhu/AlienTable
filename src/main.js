@@ -1,21 +1,24 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
-import Vue from 'vue'
-
-Vue.config.productionTip = false
 
 import alienTable from './alienTable.vue';
 
-var components = [
+const aT = {
   alienTable
-];
-const install = function(Vue) {
-  components.map(function(component) {
-    Vue.component(component.name, component);
+};
+
+const install = function (Vue) {
+
+  Object.keys(aT).forEach((key) => {
+    Vue.component(key, aT[key]);
   });
 };
 
-export default {
-  alienTable,
-  install
-};
+// auto install
+if (typeof window !== 'undefined' && window.Vue) {
+  install(window.Vue);
+}
+
+module.exports = Object.assign(aT, {install});
+
+
