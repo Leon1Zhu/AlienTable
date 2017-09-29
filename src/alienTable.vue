@@ -81,65 +81,64 @@ import tableHeader from './tableHeader.vue'
         methods: {}
     }
 </script>
-<style  lang="scss" rel="stylesheet/scss">
+<style  lang="css" rel="stylesheet/css">
   #app{
     position: relative;
     border: 1px solid #dddee1;
     -webkit-border-radius:5px;
     -moz-border-radius:5px;
     border-radius:5px;
-    .table-content{
-      table{
-        width: 100%;
-        height: 100%;
-        max-width: 100%;
-        overflow: hidden;
-        color: #495060;
-        font-size: 12px;
-        background-color: #fff;
-        border:0px;
-        th,td{
-          border-bottom:1px solid  #dddee1;
-          border-left:1px solid  #dddee1;
-        }
-        th{
-          padding:13px 11px;
-        }
-        td{
-          padding:11px;
-        }
-        tr:last-child td{
-          border-bottom:0px;
-        }
-        tr td:first-child,tr th:first-child{
-          border-left:0px;
-        }
-      }
-      .table-header{
-        position: relative;
-        left:0;
-        right:0;
-        width:100%;
-        background-color: #f8f8f9;
-        th,td{
-          text-align: left;
-          vertical-align: middle;
-        }
-        th.center{
-          text-align: center;
-        }
-        th.right{
-          text-align: right;
-        }
-        td.center{
-          text-align: center;
-        }
-        td.right{
-          text-align: right;
-        }
+  }
 
-      }
-    }
+  #app .table-content table{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    color: #495060;
+    font-size: 12px;
+    background-color: #fff;
+    border:0px;
+  }
+
+  #app .table-content th,td{
+    border-bottom:1px solid  #dddee1;
+    border-left:1px solid  #dddee1;
+  }
+  #app .table-content th{
+    padding:13px 11px;
+  }
+  #app .table-content td{
+    padding:11px;
+  }
+  #app .table-content tr:last-child td{
+    border-bottom:0px;
+  }
+  #app .table-content tr td:first-child,tr th:first-child{
+    border-left:0px;
+  }
+  #app .table-content .table-header {
+    position: relative;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #f8f8f9;
+  }
+  #app .table-content th,td{
+    text-align: left;
+    vertical-align: middle;
+  }
+  #app .table-content th.center{
+    text-align: center;
+  }
+  #app .table-content th.right{
+    text-align: right;
+  }
+  #app .table-content td.center{
+    text-align: center;
+  }
+  #app .table-content td.right{
+    text-align: right;
   }
 
 </style>

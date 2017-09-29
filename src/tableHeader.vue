@@ -20,12 +20,10 @@
         methods: {}
     }
 </script>
-<style  lang="scss" rel="stylesheet/scss">
-  .alien-table-header{
-      table{
-        width:100%;
-      }
+<style  lang="css" rel="stylesheet/css">
 
-
+  .alien-table-header table{
+    width:100%;
   }
+
 </style>
